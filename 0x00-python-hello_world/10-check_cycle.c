@@ -2,15 +2,15 @@
 
 /**
  * check_cycle - checks if a linked list contains a cycle
- * @listt: linked list to check
+ * @list: linked list to check
  * Return: 1 if the list has a cycle, 0 if it doesn't
  */
-int check_cycle(listint_t *listt)
+int check_cycle(listint_t *list)
 {
-	listtint_t *slow = listt;
-	listtint_t *fast = listt;
+	listint_t *slow = list;
+	listint_t *fast = list;
 
-	if (!listt)
+	if (!list)
 		return (0);
 
 	while (slow && fast && fast->next)
