@@ -3,16 +3,16 @@
 """Defines an integer addition function."""
 
 
-def add_integer(x, y=98):
-    """Return the integer addition of x and y.
+def add_integer(a, b=98):
+    """Return the integer addition of a and b.
 
     Float arguments are typecasted to ints before addition is performed.
 
     Raises:
-        TypeError: If either of x or y is a non-integer and non-float.
+        TypeError: If either of a or b is a non-integer and non-float.
     """
-    if ((not isinstance(x, int) and not isinstance(x, float))):
-        raise TypeError("x must be an integer")
-    if ((not isinstance(y, int) and not isinstance(y, float))):
-        raise TypeError("y must be an integer")
-    return (int(x) + int(y))
+    if ((not isinstance(a, int) and not isinstance(a, float))):
+        raise TypeError("a must be an integer")
+    if ((not isinstance(b, int) and not isinstance(b, float))):
+        raise TypeError("b must be an integer")
+    return (int(a) + int(b))
